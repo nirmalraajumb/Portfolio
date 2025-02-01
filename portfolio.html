@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirmal Raaju M B - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <canvas id="webgl"></canvas>
+    
+    <header class="header">
+        <a href="#home" class="logo">
+            Nirmal<span> Raaju</span> M B
+        </a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="gradient-btn">Contact Me</button>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Nirmal</span></h1>
+            <p>I'm a <span>Machine Learning Engineer and Developer</span></p>
+            <p>Crafting intelligent solutions through code and innovation.Passionate about building intelligent systems that solve real-world problems.</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/nirmalraajumb" target="_blank" title="GitHub Profile" class="neon-icon">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nirmal-raaju-b9401929b" target="_blank" title="LinkedIn Profile" class="neon-icon">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/nirmal_raaju?igsh=eHVlNTZvaXMycmt2" target="_blank" title="Instagram Profile" class="neon-icon">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn neon-btn">Hire Me</a>
+                <a href="#contact" class="btn neon-btn">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="Profile.jpg" alt="Profile picture of Nirmal">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-content">
+            <h2 class="neon-text">About Me</h2>
+            <p>As a Machine Learning Engineer, I specialize in developing cutting-edge AI solutions that transform complex data into actionable insights. My expertise spans across deep learning, computer vision, and natural language processing.
+As a Machine Learning Engineer, I specialize in developing cutting-edge AI solutions that transform complex data into actionable insights. My expertise spans deep learning, computer vision, and natural language processing, enabling me to build intelligent systems for diverse applications. I have a strong background in data science, model optimization, and scalable AI deployment. Passionate about leveraging advanced algorithms, I continuously explore innovations in artificial intelligence to solve real-world challenges. With experience in end-to-end machine learning pipelines, I excel in designing robust architectures, fine-tuning models, and deploying AI-driven products that enhance efficiency, automation, and decision-making across industries.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2 class="neon-text">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Rock or Mine</h3>
+                        <p>Utilizing logistic regression for rock or mine classification not only streamlines the classification process but also provides valuable insights into the underlying geological features, making it an indispensable tool in modern geological studies.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Web Scraping</h3>
+                        <p>Web scraping project using Python and BeautifulSoup to extract data from a website.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>Weather forecasting application using API's and open-source data in React.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-content">
+            <h2 class="neon-text">Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required class="neon-input">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required class="neon-input">
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Your Message" required class="neon-input"></textarea>
+                </div>
+                <button type="submit" class="gradient-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+                "three/examples/jsm/controls/OrbitControls": "https://unpkg.com/three@0.157.0/examples/jsm/controls/OrbitControls.js"
+            }
+        }
+    </script>
+    <script type="module" src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/glow-animation.js"></script>
+</body>
+</html>
